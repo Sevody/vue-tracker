@@ -1,0 +1,51 @@
+{
+  "name": "vue-track",
+  "description": "A track point directive for vue.js",
+  "version": "1.1.0",
+  "author": "Sevody <sevody@gmail.com>",
+  "browserify": {
+    "transform": [
+      "loose-envify"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/sevody/vue-track/issues"
+  },
+  "dependencies": {
+    "loose-envify": "^1.2.0",
+    "moment": "^2.22.1"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "mkdirp": "^0.5.1",
+    "rollup": "^0.21.2",
+    "rollup-plugin-replace": "^1.1.0",
+    "uglify-js": "^2.6.1"
+  },
+  "files": [
+    "index.js",
+    "dist"
+  ],
+  "homepage": "https://github.com/sevody/vue-track",
+  "keywords": [
+    "track",
+    "track point",
+    "vue",
+    "vue-directive",
+    "vuejs"
+  ],
+  "license": "MIT",
+  "main": "dist/vue-track.common.js",
+  "peerDependencies": {
+    "vue": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sevody/vue-track"
+  },
+  "scripts": {
+    "build": "node ./build.js",
+    "lint": "./node_modules/.bin/eslint index.js build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

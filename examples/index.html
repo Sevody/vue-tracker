@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Examples for vue-track</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.0/vue.js"></script>
+  <script src="../dist/vue-track.js"></script>
+</head>
+<body>
+
+  <h3>Example</h3>
+  <div id="example1">
+    <div class="container" v-track="{act:'ready',data:{id:100,p:['example1']}}">
+      <p><button  v-track="{act:'click',data:{id:200}}">Save</button></p>
+    </div>
+  </div>
+
+  <script>
+    new Vue({
+      el: '#example1',
+      data: {
+        shown: true,
+      },
+    });
+  </script>
+</body>
+</html>
