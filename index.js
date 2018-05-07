@@ -2,7 +2,7 @@ import Vue from 'vue'
 import _ from 'underscore'
 import moment from 'moment'
 
-export const version = '1.1.0';
+export const version = '1.1.3';
 
 const compatible = (/^2\./).test(Vue.version);
 if (!compatible) {
