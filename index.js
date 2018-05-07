@@ -208,7 +208,7 @@ Vue.directive('track', {
   }
 })
 
-// 如使用指令无法满足需求，可以考虑使用该 mixin
+// 如果指令无法满足需求，可以考虑使用该 mixin
 export const mixin = {
   methods: {
     track(args, hf) {
