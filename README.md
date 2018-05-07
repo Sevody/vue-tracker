@@ -1,4 +1,4 @@
-# vue-track
+# vue-tracker
 
 > A track point directive for [vue.js](https://github.com/vuejs/vue)
 
@@ -11,7 +11,7 @@
 From npm:
 
 ``` sh
-$ npm install vue-track --save
+$ npm install vue-tracker --save
 ```
 
 ## Usage
@@ -19,9 +19,9 @@ $ npm install vue-track --save
 ### `v-track`
 
 ``` js
-import * as track from 'vue-track';
+import * as tracker from 'vue-tracker';
 
-track.init(fetchFunction)
+tracker.init(fetchFunction)
 
 export default {
   template: '<button v-track="{act:'click',data:{id:100}}">Save</button>',
@@ -31,12 +31,12 @@ export default {
 ### `mixin`
 
 ``` js
-import * as track from 'vue-track';
+import * as tracker from 'vue-tracker';
 
-track.init(fetchFunction)
+tracker.init(fetchFunction)
 
 export default {
-  mixins: [ track.mixin ],
+  mixins: [ tracker.mixin ],
   template: '<button @click="track(arguments,handleClick)({id:200},true)">Leave</button>/>',
 };
 ```

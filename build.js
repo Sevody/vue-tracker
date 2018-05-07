@@ -24,7 +24,7 @@ function generateCommonModule() {
       }).code;
     })
     .then(function(code) {
-      write('dist/vue-track.common.js', code);
+      write('dist/vue-tracker.common.js', code);
     });
 }
 
@@ -42,12 +42,12 @@ function generateBundledDev() {
     .then(function(bundle) {
       return bundle.generate({
         format: 'iife',
-        moduleName: 'vueTrack',
+        moduleName: 'Tracker',
         globals: { vue: 'Vue' },
       }).code;
     })
     .then(function(code) {
-      write('dist/vue-track.js', code);
+      write('dist/vue-tracker.js', code);
     });
 }
 
@@ -65,7 +65,7 @@ function generateBundledProd() {
     .then(function(bundle) {
       return bundle.generate({
         format: 'iife',
-        moduleName: 'vueTrack',
+        moduleName: 'Tracker',
         globals: { vue: 'Vue' },
       }).code;
     })
@@ -78,7 +78,7 @@ function generateBundledProd() {
       }).code;
     })
     .then(function(code) {
-      return write('dist/vue-track.min.js', code);
+      return write('dist/vue-tracker.min.js', code);
     }); 
 }
 

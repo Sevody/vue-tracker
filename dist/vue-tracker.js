@@ -8,7 +8,7 @@
 
   const compatible = (/^2\./).test(Vue.version);
   if (!compatible) {
-    Vue.util.warn('vueTrack ' + version + ' only supports Vue 2.x, and does not support Vue ' + Vue.version);
+    Vue.util.warn('Tracker ' + version + ' only supports Vue 2.x, and does not support Vue ' + Vue.version);
   }
 
   let tracker = (params) => {
@@ -247,4 +247,4 @@
   exports.init = init;
   exports.mixin = mixin;
 
-})((this.vueTrack = {}),Vue,_,moment);
+})((this.Tracker = {}),Vue,_,moment);
